@@ -30,7 +30,7 @@ class XboxControllerInput(Controller):
 
         for raw_controller in raw_controllers:
             controller_id = raw_controller.id
-            controllers.append(XboxController(
+            controllers.append(XboxControllerInput(
                 f'xbx_{controller_id}',
                 controller_id
             ))
